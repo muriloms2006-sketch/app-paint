@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F2FA"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEU PAINT"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#57446F"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+
+    <com.app.paint.DesenhoView
+        android:id="@+id/desenho"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnPreto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Preto"
+            android:textSize="10sp"
+            android:minWidth="0dp"/>
+
+        <Button
+            android:id="@+id/btnVermelho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vermelho"
+            android:textSize="10sp"
+            android:minWidth="0dp"/>
+
+        <Button
+            android:id="@+id/btnAzul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Azul"
+            android:textSize="10sp"
+            android:minWidth="0dp"/>
+
+        <Button
+            android:id="@+id/btnVerde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Verde"
+            android:textSize="10sp"
+            android:minWidth="0dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIMPAR DESENHO"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
+
+
